@@ -7,7 +7,7 @@ def new_deck():
     z = []
     for suite in x:
         for card_num in y:
-            new_card = "%s of %s" % (card_num, suite)
+            new_card = "%s %s" % (card_num, suite)
             z.append(new_card)
     return z
 
@@ -28,5 +28,5 @@ set_of_hands = []
 for i in range(9):
     set_of_hands.append(make_hand(deck))
 
-print set_of_hands
-
+for i in set_of_hands:
+    print i

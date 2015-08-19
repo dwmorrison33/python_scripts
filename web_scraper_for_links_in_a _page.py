@@ -16,7 +16,7 @@ def get_next_target(page):
     url = page[start_quote + 1: end_quote]
     return url, end_quote
 
-url, endpos = get_next_target(get_page('http://www.codewithchrist.com/'))
+url, endpos = get_next_target(get_page('http://upcoachme.com/'))
 
 def print_all_links(page):
     while True:
